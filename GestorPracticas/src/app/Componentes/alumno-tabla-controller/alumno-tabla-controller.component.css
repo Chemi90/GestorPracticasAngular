@@ -1,0 +1,72 @@
+.contenedor {
+    font-family: Arial, sans-serif;
+    background-color: #E9F1F2;
+    margin: 0;
+    padding: 0;
+}
+
+.border-pane {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+}
+
+.user-section {
+    text-align: right;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+.welcome-text {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+button {
+    background-color: #A8BBBF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px; /* Asegura un poco de espacio entre el texto y el botón */
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.content h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #A8BBBF;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}

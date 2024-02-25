@@ -1,0 +1,16 @@
+<div class="contenedor">
+  <div class="border-pane">
+    <div class="login-container">
+      <label for="userField">Nombre de usuario</label>
+      <input (input)="mensajeError=''" [(ngModel)]="usuario" type="text" id="userField" name="username" required />
+
+      <label for="passField">Contraseña</label>
+      <input [(ngModel)]="clave" type="password" id="passField" name="clave" required />
+
+      <div class="buttons">
+        <button id="cancelarBtn" (click)="salir()">Cancelar</button>
+        <button id="accederBtn" (click)="login()">Acceder</button>
+      </div>
+    </div>
+  </div>
+</div>

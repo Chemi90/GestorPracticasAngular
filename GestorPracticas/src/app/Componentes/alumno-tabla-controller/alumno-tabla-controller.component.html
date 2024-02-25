@@ -1,0 +1,36 @@
+<div class="contenedor">
+  <div class="border-pane">
+    <div class="header">
+      <div class="user-section">
+        <span class="welcome-text">Bienvenido {{nombreUsuario}}</span>
+        <button id="salirBtn" (click)="salir()">Salir</button>
+      </div>
+    </div>
+    <div class="content">
+      <h1>Tus entradas</h1>
+      <table>
+  <tr>
+    <th>Fecha</th>
+    <th>Tipo práctica</th>
+    <th>Total horas/día</th>
+    <th>Actividad</th>
+    <th>Observaciones</th>
+  </tr>
+  <!-- Utilizando un enfoque similar al ejemplo proporcionado -->
+  @for (entrada of entradas; track $index) {
+    <tr>
+      <td>{{entrada.fecha}}</td>
+      <td>{{entrada.tipo_practica}}</td>
+      <td>{{entrada.total_horas}}</td>
+      <td>{{entrada.actividad}}</td>
+      <td>{{entrada.observaciones}}</td>
+    </tr>
+  }
+</table>
+
+    </div>
+    <div class="footer">
+      <button id="crearBtn" (click)="crear()">Crear</button>
+    </div>
+  </div>
+</div>

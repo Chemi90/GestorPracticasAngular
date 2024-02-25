@@ -1,0 +1,53 @@
+<div class="contenedor">
+    <header class="app-header">
+        <div class="header-content">
+            <div class="left-section">
+                <span class="company-name">Nombre empresa</span>
+                <div class="hours-info">
+                    <span class="hours-total">Nº horas totales: </span>
+                    <span class="hours-remaining">Nº horas restantes: </span>
+                </div>
+            </div>
+            <div class="tutor-info">
+                <span>Tutor: Nombre del tutor</span>
+            </div>
+            <div class="right-section">
+                <span>Bienvenido Alumno</span>
+                <button id="logoutBtn" (click)="salir()">Salir</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="form-container">
+            <h1>Nueva entrada</h1>
+            <div class="form-entry">
+              <form (submit)="crearEntrada(); $event.preventDefault();">
+                  <label for="date">Fecha</label>
+                  <input type="date" id="date" name="date" [(ngModel)]="fecha">
+          
+                  <label for="practice-type">Tipo práctica</label>
+                  <select id="practice-type" name="practice-type" [(ngModel)]="tipoPractica">
+                      <option value="fct">fct</option>
+                      <option value="Dual">Dual</option>
+                  </select>
+          
+                  <label for="hours-day">Total horas/día</label>
+                  <input type="number" id="hours-day" name="hours-day" [(ngModel)]="totalHoras">
+          
+                  <label for="activity">Actividad</label>
+                  <textarea id="activity" name="activity" [(ngModel)]="actividad"></textarea>
+          
+                  <label for="observations">Observaciones</label>
+                  <textarea id="observations" name="observations" [(ngModel)]="observaciones"></textarea>
+          
+                  <div class="form-actions">
+                      <button type="button" id="viewEntriesBtn" (click)="volverTabla()">Ver todas mis entradas</button>
+                      <button type="submit" id="saveBtn">Guardar</button>
+                  </div>
+              </form>
+            </div>
+          </div>
+          
+    </main>
+</div>
